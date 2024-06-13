@@ -93,8 +93,8 @@ def process_data():
         }
     return jsonify(response_data)
 
-# if __name__ == '__main__':
-#     app.run(host='0.0.0.0',debug=True,port=8000)  # Run the Flask app
+if __name__ == '__main__':
+    app.run(host='0.0.0.0',debug=True,port=8000)  # Run the Flask app
 
 
 
