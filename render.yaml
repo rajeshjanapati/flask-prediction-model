@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: prediction-model
+    env: python
+    region: oregon
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn app:app"
+    envVars:
+      - key: FLASK_ENV
+        value: development
+      - key: PORT
+        value: 8000
